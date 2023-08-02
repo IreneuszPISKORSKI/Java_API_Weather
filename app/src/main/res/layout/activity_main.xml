@@ -8,41 +8,30 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn_getCityID"
+        android:id="@+id/btn_getBusStops"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="GET CITY ID"
+        android:text="GET BUS STOPS"
         android:textSize="11sp"
-        app:layout_constraintEnd_toStartOf="@id/btn_getWeatherByCityID"
+        app:layout_constraintEnd_toStartOf="@id/btn_getBusLines"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="19dp" />
 
     <Button
-        android:id="@+id/btn_getWeatherByCityID"
+        android:id="@+id/btn_getBusLines"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WEATHER BY ID"
+        android:text="GET BUS LINES"
         android:textSize="11sp"
-        app:layout_constraintEnd_toStartOf="@+id/btn_getWeatherByCityName"
-        app:layout_constraintStart_toEndOf="@id/btn_getCityID"
-        app:layout_constraintTop_toTopOf="@id/btn_getCityID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_getBusStops"
+        app:layout_constraintTop_toTopOf="@id/btn_getBusStops"
         tools:layout_editor_absoluteX="170dp"
         tools:layout_editor_absoluteY="17dp" />
 
-    <Button
-        android:id="@+id/btn_getWeatherByCityName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WEATHER BY NAME"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btn_getWeatherByCityID"
-        app:layout_constraintTop_toTopOf="@id/btn_getCityID"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="20dp" />
 
     <EditText
         android:id="@+id/et_dataInput"
@@ -52,12 +41,27 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="5dp"
         android:ems="10"
-        android:hint="City Name"
+        android:hint="X"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_getCityID" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_getBusStops" />
+
+    <EditText
+        android:id="@+id/et_dataInput_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:hint="Y"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_dataInput" />
 
     <ListView
         android:id="@+id/lv_weatherReports"
@@ -68,6 +72,6 @@
         android:layout_marginEnd="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_dataInput" />
+        app:layout_constraintTop_toBottomOf="@+id/et_dataInput_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
