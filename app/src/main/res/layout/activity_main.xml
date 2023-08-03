@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="GET BUS STOPS"
+        android:text="SHOW BUS LIST"
         android:textSize="11sp"
         app:layout_constraintEnd_toStartOf="@id/btn_getBusLines"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +41,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="5dp"
         android:ems="10"
-        android:hint="X"
+        android:hint="X: 5.672 - 5.804 (5.731: Chavant)"
+        android:text="5.731"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -56,7 +57,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="5dp"
         android:ems="10"
-        android:hint="Y"
+        android:hint="Y: 45.122 - 45.222 (45.185: Chavant)"
+        android:text="45.185"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -64,7 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_dataInput" />
 
     <ListView
-        android:id="@+id/lv_weatherReports"
+        android:id="@+id/lv_busResults"
         android:layout_width="409dp"
         android:layout_height="598dp"
         android:layout_marginStart="5dp"
